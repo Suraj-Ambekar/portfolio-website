@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Logo from './Logo';
 
 const NavBar = () => {
   return (
@@ -10,13 +11,17 @@ const NavBar = () => {
         <Link href="/projects">Projects</Link>
         <Link href="/articles">Articles</Link>
       </nav>
-      <h2>Logo</h2>
+      
       <nav>
         <Link href="/" target={"_blank"}>GitHub</Link>
         <Link href="/about" target={"_blank"}>LinkedIn</Link>
         <Link href="/projects" target={"_blank"}>Instagram</Link>
         <Link href="/articles" target={"_blank"}>Whatsapp</Link>
       </nav>
+
+      <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
+        <Logo />
+      </div>
     </header>
   )
 }
