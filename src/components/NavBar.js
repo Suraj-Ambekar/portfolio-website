@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Logo from './Logo';
 import { useRouter } from 'next/router';
 import { GitHub, Instagram, LinkedIn, Whatsapp } from './Icons';
+import { motion } from 'framer-motion';
 
 const CustomLink = ({href, title, className=""})=> {
 
@@ -31,11 +32,35 @@ const NavBar = () => {
         <CustomLink href="/articles" title="Articles" className='ml-4' />
       </nav>
 
-      <nav>
-        <Link href="/" target={"_blank"}><GitHub /></Link>
-        <Link href="/about" target={"_blank"}><LinkedIn /></Link>
-        <Link href="/projects" target={"_blank"}><Instagram /></Link>
-        <Link href="/articles" target={"_blank"}><Whatsapp /></Link>
+      <nav className='flex justify-center items-center flex-wrap'>
+        <motion.a 
+          href="https://github.com/suraj-Ambekar/" target={"_blank"} 
+          whileHover={{y:-2}} whileTap={{scale: 0.9}} 
+          className='w-6 mx-3'
+        >
+          <GitHub />
+        </motion.a>
+        <motion.a 
+          href="https://www.linkedin.com/in/suraj-ambekar/" target={"_blank"} 
+          whileHover={{y:-2}} whileTap={{scale: 0.9}} 
+          className='w-6 mx-3'
+        >
+          <LinkedIn />
+        </motion.a>
+        <motion.a 
+          href="https://www.instagram.com/ambekarsuraj03_/" target={"_blank"} 
+          whileHover={{y:-2}} whileTap={{scale: 0.9}} 
+          className='w-6 mx-3'
+        >
+          <Instagram />
+        </motion.a>
+        <motion.a 
+          href="https://api.whatsapp.com/send/?phone=9819298932&text&type=phone_number&app_absent=0" target={"_blank"} 
+          whileHover={{y:-2}} whileTap={{scale: 0.9}} 
+          className='w-6 ml-3'
+        >
+          <Whatsapp />
+        </motion.a>
       </nav>
 
       <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
