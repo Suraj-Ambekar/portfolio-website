@@ -6,7 +6,7 @@ const Lilcon = ({reference}) => {
     const {scrollYProgress} =useScroll(
         {
             target: reference,
-            offset: ["center end", "center center"]
+            offset: ["start end", "center center"]
         }
     )
 
