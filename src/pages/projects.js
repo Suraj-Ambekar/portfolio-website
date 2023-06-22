@@ -31,6 +31,28 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
     )
 }
 
+const Project = ({title, type, img, link, github}) => {
+    return (
+        <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative'>
+            <Link className='w-full cursor-pointer overflow-hidden rounded-lg' href={link} target="_blank">
+                <Image src={img} alt={title} className='w-full h-auto' />
+            </Link>
+            <div className='w-full flex flex-col items-start justify-between mt-4'>
+                <span className='text-primary font-medium text-xl'>{type}</span>
+                <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
+                    <h2 className='my-2 w-full text-left text-3xl font-bold'>{title}</h2>
+                </Link>
+                <div className='w-full mt-2 flex items-center justify-between'>
+                    <Link href={link} target="_blank" 
+                        className='text-lg font-semibold underline'
+                    >Visit</Link>
+                    <Link href={github} target="_blank" className='w-8'><GitHub /></Link>
+                </div>
+            </div>
+        </article>
+    )
+}
+
 const projects = () => {
   return (
     <>
@@ -53,7 +75,14 @@ const projects = () => {
                         />
                     </div>
                     <div className='col-span-6'>
-                        Project-1
+                        <Project 
+                            title="YouTube Clone"
+                            img={}
+                            summary="A feature-A Movie Rating Website using React, SCSS, and TMDB (database api) . It shows details regarding almost all the movies. You can easily search any movie and apply filter to search specific genre movies."
+                            link="https://youtube-clone-websites.netlify.app/"
+                            github="https://github.com/Suraj-Ambekar/YouTube-clone"
+                            type="Featured Project"
+                        />
                     </div>
                     <div className='col-span-6'>
                         Project-2
