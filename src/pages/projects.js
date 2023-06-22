@@ -6,6 +6,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import project1 from '../../public/images/projects images/project1.JPG';
+import project2 from '../../public/images/projects images/project2.JPG';
+import project3 from '../../public/images/projects images/project3.JPG';
+import project4 from '../../public/images/projects images/project4.JPG';
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
     return (
@@ -68,7 +71,7 @@ const projects = () => {
                         <FeaturedProject 
                             title="CineMagic: A Movie Rating Website"
                             img={project1}
-                            summary="A feature-A Movie Rating Website using React, SCSS, and TMDB (database api) . It shows details regarding almost all the movies. You can easily search any movie and apply filter to search specific genre movies."
+                            summary="A feature-A Movie Rating Website using React, SCSS, and TMDB (database api). It shows details regarding almost all the movies. You can easily search any movie and apply filter to search specific genre movies."
                             link="https://cinemagic-website.netlify.app/"
                             github="https://github.com/Suraj-Ambekar/CineMagic"
                             type="Featured Project"
@@ -77,18 +80,30 @@ const projects = () => {
                     <div className='col-span-6'>
                         <Project 
                             title="YouTube Clone"
-                            img={}
-                            summary="A feature-A Movie Rating Website using React, SCSS, and TMDB (database api) . It shows details regarding almost all the movies. You can easily search any movie and apply filter to search specific genre movies."
+                            img={project2}
                             link="https://youtube-clone-websites.netlify.app/"
                             github="https://github.com/Suraj-Ambekar/YouTube-clone"
-                            type="Featured Project"
+                            type="Clone Website"
                         />
                     </div>
                     <div className='col-span-6'>
-                        Project-2
+                        <Project 
+                            title="Showwcase.com Clone"
+                            img={project3}
+                            link="https://showwcase-clone.netlify.app/"
+                            github="https://github.com/Suraj-Ambekar/React-Projects/tree/main/showwcaseclone"
+                            type="Clone Website"
+                        />
                     </div>
                     <div className='col-span-12'>
-                        Project-3
+                        <FeaturedProject 
+                            title="Portfolio website"
+                            img={project4}
+                            summary="A professional portfolio website using React JS, Framer-motion, and Tailwind CSS. It has smooth page transitions, cool effects, unique design and it is mobile responsive."
+                            link="https://cinemagic-website.netlify.app/"
+                            github="https://github.com/Suraj-Ambekar/portfolio-website"
+                            type="Featured Project"
+                        />
                     </div>
                 </div>
             </Layout>
