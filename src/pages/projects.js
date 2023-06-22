@@ -5,6 +5,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import project1 from '../../public/images/projects images/project1.JPG';
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
     return (
@@ -40,7 +41,14 @@ const projects = () => {
                 <AnimatedText text="Imagination Trumps knowledge!" />
                 <div className='grid grid-cols-12 gap-24'>
                     <div className='col-span-12'>
-                        <FeaturedProject />
+                        <FeaturedProject 
+                            title="CineMagic: A Movie Rating Website"
+                            img={project1}
+                            summary="A feature-A Movie Rating Website using React, SCSS, and TMDB (database api) . It shows detail regarding almost all the movies. You can easily search any movie and apply filter to search specific genre movies."
+                            link="https://cinemagic-website.netlify.app/"
+                            github="https://github.com/Suraj-Ambekar/CineMagic"
+                            type="Featured Project"
+                        />
                     </div>
                     <div className='col-span-6'>
                         Project-1
