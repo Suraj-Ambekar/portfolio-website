@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Logo from './Logo';
 import { useRouter } from 'next/router';
-import { GitHub, Instagram, LinkedIn, Whatsapp } from './Icons';
+import { GitHub, Instagram, LinkedIn, MoonIcon, SunIcon, Whatsapp } from './Icons';
 import { motion } from 'framer-motion';
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 
@@ -65,8 +65,13 @@ const NavBar = () => {
         >
           <Whatsapp />
         </motion.a>
-        <button>
-
+        <button onClick={()=> setMode(mode === "light" ? "dark" : "light")}
+          className='ml-3 flex items-center justify-center rounded-full p-1'
+        >
+          {
+            mode === "dark" ? <SunIcon className={"fill-dark"} />
+            : <MoonIcon className={"fill-dark"} />
+          }
         </button>
       </nav>
 
