@@ -17,7 +17,7 @@ const FramerImage = motion(Image)
 const FeaturedArticle = ({img,title, time, summary, link}) => {
     return (
         <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl'>
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-red-900 rounded-br-3xl' />
+            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-black rounded-br-3xl' />
             <Link
                 href={link}
                 target="_blank"
@@ -39,7 +39,7 @@ const FeaturedArticle = ({img,title, time, summary, link}) => {
 
 const Article = ({img, title, date, link}) => {
     return (
-        <li>
+        <li className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark">
             <Link href={link} target="_blank">
                 <h2>{title}</h2>
             </Link>
@@ -55,8 +55,8 @@ const articles = () => {
             <title>Suraj Ambekar | Article Page</title>
             <meta name="description" content="Article page" />
         </Head>
-        <main>
-            <Layout className='pt-16 mb-16 flex flex-col items-center justify-center overflow-hidden'>
+        <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
+            <Layout className='pt-16'>
                 <AnimatedText text="Words Can Change The World!" className='mb-16' />
                 <ul className='grid grid-cols-2 gap-16'>
                     <FeaturedArticle 
