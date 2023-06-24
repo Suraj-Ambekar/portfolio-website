@@ -23,6 +23,27 @@ const CustomLink = ({href, title, className=""})=> {
   )
 }
 
+const CustomMobileLink = ({href, title, className=""})=> {
+
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(href)
+  }
+
+  return (
+    <button href={href} className={`${className} relative group`} onClick={handleClick}>
+      {title}
+      <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5
+        group-hover:w-full transition-[width] ease duration-300
+        ${router.asPath === href ? "w-full" : "w-0"} dark:bg-light
+      `}>
+        &nbsp;
+      </span>
+    </button>
+  )
+}
+
 const NavBar = () => {
 
   const [mode, setMode] = useThemeSwitcher();
@@ -95,10 +116,10 @@ const NavBar = () => {
         bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
       '>
         <nav className='flex items-center flex-col justify-center'>
-          <CustomLink href="/" title="Home" className='mr-4' />
-          <CustomLink href="/about" title="About" className='mx-4' />
-          <CustomLink href="/projects" title="Projects" className='mx-4' />
-          <CustomLink href="/articles" title="Articles" className='ml-4' />
+          <CustomMobileLink href="/" title="Home" className='mr-4' />
+          <CustomMobileLink href="/about" title="About" className='mx-4' />
+          <CustomMobileLink href="/projects" title="Projects" className='mx-4' />
+          <CustomMobileLink href="/articles" title="Articles" className='ml-4' />
         </nav>
 
         <nav className='flex justify-center items-center flex-wrap'>
