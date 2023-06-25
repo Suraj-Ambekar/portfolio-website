@@ -5,10 +5,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project1 from '../../public/images/projects images/project1.jpg';
-import project2 from '../../public/images/projects images/project2.jpg';
-import project3 from '../../public/images/projects images/project3.jpg';
-import project4 from '../../public/images/projects images/project4.jpg';
+import project1 from '../../public/images/projectsimages/project1.jpg';
+import project2 from '../../public/images/projectsimages/project2.jpg';
+import project3 from '../../public/images/projectsimages/project3.jpg';
+import project4 from '../../public/images/projectsimages/project4.jpg';
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
