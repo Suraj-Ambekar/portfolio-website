@@ -10,6 +10,7 @@ import project2 from '../../public/images/projects images/project2.JPG';
 import project3 from '../../public/images/projects images/project3.JPG';
 import project4 from '../../public/images/projects images/project4.JPG';
 import { motion } from 'framer-motion'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
     return (
@@ -90,6 +91,7 @@ const projects = () => {
             <title>Suraj Ambekar | Projects Page</title>
             <meta name="description" content="Projects page" />
         </Head>
+        <TransitionEffect />
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
             <Layout className='pt-16' >
                 <AnimatedText text="Imagination Trumps knowledge!"  className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
