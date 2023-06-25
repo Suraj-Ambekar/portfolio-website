@@ -24,7 +24,7 @@ export default function RootLayout({ Component, pageProps }) {
         <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen dark:bg-dark`}>
           <NavBar />
           <AnimatePresence mode='wait'>
-            <Component {...pageProps} key={router.asPath} />
+            <Component key={router.asPath} {...pageProps}/>
           </AnimatePresence>
           <Footer />
         </main>
