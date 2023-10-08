@@ -15,7 +15,7 @@ const Details = ({position, company, comapnyLink, time, address, work}) => {
         >
             <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>{position}&nbsp;<a href={comapnyLink} target='_blank' className='text-primary dark:text-primaryDark capitalize'>{company}</a></h3>
             <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
-                {time}  {address}
+                {time} | {address}
             </span>
             <p className='font-medium w-full md:text-sm'>
                 {work}
@@ -49,7 +49,9 @@ const Experience = () => {
                     position="" company="" comapnyLink="" time="" address="" work=""
                 />
                 <Details 
-                    position="Fresher" company="" comapnyLink="" time="" address="" work="I have the knowledge of HTML, CSS, JavaScript, React.Js, Next.Js, Redux, Bootstrap, TailwindCSS, SCSS, Git, and Github."
+                    position="Programming Associate" company="Peoplehum" comapnyLink="https://www.peoplehum.com" time="07/2023 - Present" address="Mumbai, India" work="
+                    I have the Developed the backend infrastructure of partnership portal using Node.js, Express.js, and PostgreSQL, ensuring high performance and data integrity Optimized file management with AWS S3 and Redis, while integrating a calendar API for efficient call schedulin. Collaborated on the live project's frontend using Webflow to implement and enhance small features.
+                    "
                 />
             </ul>
         </div>
