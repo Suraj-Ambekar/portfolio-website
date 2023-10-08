@@ -45,6 +45,9 @@ const Skills = () => {
         <Skill name="SCSS" x="0vw" y="-20vw" />
         <Skill name="Git" x="-33vw" y="0vw" />
         <Skill name="GitHub" x="0vw" y="20vw" />
+        <Skill name="Node.Js" x="33vw" y="0vw" />
+        <Skill name="Express.Js" x="20vw" y="20vw" />
+        <Skill name="PostgresSQL" x="-20vw" y="20vw" />
       </div>
 
     </>
