@@ -47,7 +47,7 @@ const Education = () => {
                     type="Master Of Science In Information Technology"
                     time="2021-2023"
                     place="Guru Nanak Khalsa College, Mumbai"
-                    info="CGPA: 9.38"
+                    info="CGPA: 9.40"
                 />
                 <Details 
                     type="Bachelor Of Science In Information Technology"

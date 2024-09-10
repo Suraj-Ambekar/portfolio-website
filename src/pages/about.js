@@ -41,6 +41,7 @@ const about = () => {
     const handleJobLeave = () => {
         setJob(false);
     }
+    const experience = ((new Date().getFullYear() - new Date('2023-07-01').getFullYear()) + (new Date().getMonth() - new Date('2023-07-01').getMonth()) / 12).toFixed(1);
 
   return (
     <>
@@ -86,19 +87,19 @@ const about = () => {
                     <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
                         <div className='flex flex-col items-end justify-center xl:items-center'>
                             <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                                1
+                                3
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Aschievements</h2>
                         </div>
                         <div className='flex flex-col items-end justify-center xl:items-center'>
                             <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                                10+
+                                14+
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Projects Completed</h2>
                         </div>
                         <div className='flex flex-col items-end justify-center xl:items-center'>
                             <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                                0
+                                {experience}
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Years of experience</h2>
                         </div>
