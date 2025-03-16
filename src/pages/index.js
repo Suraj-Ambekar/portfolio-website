@@ -45,8 +45,8 @@ export default function Home() {
                 impactful solutions.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
-                <Link
-                  href="/public/suraj-ambekar-resume.pdf"
+                {/* <Link
+                  href="/portfolio-website/public/suraj-ambekar-resume.pdf"
                   target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                                         border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
@@ -55,7 +55,18 @@ export default function Home() {
                   download={true}
                 >
                   Resume <LinkArrow className={"w-6 ml-1"} />
-                </Link>
+                </Link> */}
+                <a
+                  href="/suraj-ambekar-resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+            border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark 
+            hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
+                  download
+                >
+                  Resume <LinkArrow className="w-6 ml-1" />
+                </a>
                 <Link
                   href="mailto:ambekarsuraj03@gmail.com"
                   target={"_blank"}
