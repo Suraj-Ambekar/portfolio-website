@@ -57,7 +57,7 @@ export default function Home() {
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link> */}
                 <a
-                  href="/suraj_ambekar_resume.pdf"
+                  href="/Suraj-Ambekar--Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
